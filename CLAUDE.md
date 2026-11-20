@@ -9,6 +9,7 @@ Logo + hero film are Lovable-hosted (`src/assets/*.asset.json` → `/__l5e/...`)
 ## Commands
 - `npm run dev -- --port 5321 --host 127.0.0.1` (5180 is often taken by another local project)
 - `npx tsc --noEmit -p .` · `npm test` · `npm run build`
+- Deploy: `npm run deploy` → Cloudflare Worker `stelaarc` at https://stelaarc.preview.forareason.in (needs `npx wrangler login`). Compatibility date is pinned in the script because nitro stamps the local (IST) date, which Cloudflare rejects as "in the future" while UTC is still a day behind.
 - Lint: the codebase is intentionally not Prettier-formatted; check real issues with `npx eslint src --rule "prettier/prettier: off"`.
 
 ## Concept showcase (landing page "/")
